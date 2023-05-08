@@ -17,7 +17,7 @@ export default class App extends Component {
         <h1>{this.state.num}</h1>
         <button onClick={()=>{
           this.setState({
-            num:this.state.num++
+            num:this.state.num+1
           })
         }}>修改num</button>
       </div>

@@ -21,7 +21,10 @@ import reportWebVitals from './reportWebVitals'
 // import App from './03-生命周期/03-getDerivedStateFromProps'
 // import App from './03-生命周期/04-componentDidUpdate'
 // import App from './03-生命周期/05-getSnapshotBeforeUpdate'
-import App from './03-生命周期/06-getSnapshotBeforeUpdate应用'
+// import App from './03-生命周期/06-getSnapshotBeforeUpdate应用'
+// import App from './04-性能优化/01-PureComponent'
+// import App from './05-hooks/01-useState'
+import App from './05-hooks/02-useEffect'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   // <React.StrictMode>
