@@ -16,12 +16,17 @@ import reportWebVitals from './reportWebVitals'
 // import App from './02-组件通信/发布订阅'
 // import App from './02-组件通信/context'
 // import App from './02-组件通信//插槽'
-import App from './03-生命周期/01-生命周期'
+// import App from './03-生命周期/01-生命周期'
+// import App from './03-生命周期/02-shouldComponentUpdate'
+// import App from './03-生命周期/03-getDerivedStateFromProps'
+// import App from './03-生命周期/04-componentDidUpdate'
+// import App from './03-生命周期/05-getSnapshotBeforeUpdate'
+import App from './03-生命周期/06-getSnapshotBeforeUpdate应用'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <App></App>
-  </React.StrictMode>
+  // </React.StrictMode>
 
   // React.createElement(
   //   'div',
