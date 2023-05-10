@@ -24,7 +24,17 @@ import reportWebVitals from './reportWebVitals'
 // import App from './03-生命周期/06-getSnapshotBeforeUpdate应用'
 // import App from './04-性能优化/01-PureComponent'
 // import App from './05-hooks/01-useState'
-import App from './05-hooks/02-useEffect'
+// import App from './05-hooks/02-useEffect'
+// import App from './05-hooks/03-useCallback'
+// import App from './05-hooks/04-useMemo'
+// import App from './05-hooks/05-useRef'
+// import App from './05-hooks/05-useRef-保存值使用'
+// import App from './05-hooks/06-useContext'
+// import App from './05-hooks/07-useReducer'
+// import App from './05-hooks/07-useReducer/07-useReducer组件传值'
+// import App from './05-hooks/07-useReducer-useContext/07-useReducer组件传值'
+// import App from './05-hooks/07-useReducer-useContext-01/07-useReducer组件传值'
+import App from './06-router/index'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   // <React.StrictMode>
