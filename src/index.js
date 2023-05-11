@@ -34,7 +34,10 @@ import reportWebVitals from './reportWebVitals'
 // import App from './05-hooks/07-useReducer/07-useReducer组件传值'
 // import App from './05-hooks/07-useReducer-useContext/07-useReducer组件传值'
 // import App from './05-hooks/07-useReducer-useContext-01/07-useReducer组件传值'
-import App from './06-router/index'
+// import App from './05-hooks/08-mome'
+// import App from './06-router/index'
+// import App from './07-redux/index'
+import App from './07-redux-多个reducer/index'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   // <React.StrictMode>

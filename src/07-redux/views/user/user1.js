@@ -21,8 +21,6 @@ export default class User1 extends Component {
     }))
   }
   goDetail(id){
-    console.log(this.props.history);
-    console.log(id);
     this.props.history.push(`/detail/${id}`)
   }
   render() {
