@@ -9,12 +9,13 @@ export default class Home extends Component {
     ).then((res) => {
       console.log('res:', res)
       this.setState({
-        list:res
+        list:res.data.coming
       })
     })
   }
   render() {
     return <div>
+      <h1>home中的内容</h1>
       <ul>
         {/* {this.state.list.map(item=><li key={item.title}>
           <img src={item.url} alt={item.title}></img>

@@ -10,7 +10,7 @@ export default class App extends Component {
     store.subscribe(() => {
       console.log('我被订阅了', store.getState())
       this.setState({
-        show: store.getState().show,
+        show: store.getState().showHideTabbar.show,
       })
     })
   }

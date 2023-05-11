@@ -1,7 +1,7 @@
 const initState = {
   show:true
 }
-const reducer= (prevState=initState,action={})=>{
+export  const reducer= (prevState=initState,action={})=>{
   let newValue={...prevState}
   const {type} =action
   switch (type) {

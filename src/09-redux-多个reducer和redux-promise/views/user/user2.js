@@ -21,7 +21,7 @@ export default class User2 extends Component {
     return (
       <div><ul>
         {
-          this.state.list.map(item=><li key={item.filmId}>
+          this.state.list.map(item=><li key={item.cinemaId}>
             <p>{item.name}</p>
             <p>{item.address}</p>
             </li>)

@@ -4,6 +4,7 @@ import Home from './views/home'
 import User from './views/user'
 import Detail from './views/Detail'
 import Login from './views/login'
+import Cinemas from './views/cinemas'
 import NoFound from './views/notFound'
 export default class MyRoute extends Component {
   isAuth(){
@@ -23,6 +24,7 @@ export default class MyRoute extends Component {
             }}></Route>
             <Route path="/login" component={Login}></Route>
             <Route path="/user" component={User}></Route>
+            <Route path="/cinemas" component={Cinemas}></Route>
             {/* path="/detail/:id"  动态路由 */}
             <Route path="/detail/:id" component={Detail}></Route>
             <Redirect path="/" to="/home" exact></Redirect>

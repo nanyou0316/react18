@@ -14,6 +14,10 @@ export default class Tabbar extends Component {
             <NavLink to='/home' activeClassName={style.active}>中心</NavLink>
             
           </li>
+          <li>
+            <NavLink to='/cinemas' activeClassName={style.active}>影院</NavLink>
+            
+          </li>
         </ul>
       </div>
     )
