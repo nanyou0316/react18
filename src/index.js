@@ -38,11 +38,22 @@ import reportWebVitals from './reportWebVitals'
 // import App from './06-router/index'
 // import App from './07-redux/index'
 // import App from './09-redux-多个reducer和redux-thunk/index'
-import App from './09-redux-多个reducer和redux-promise/index'
+// import App from './09-redux-多个reducer和redux-promise/index'
+// import App from './10-react-redux1/index'
+// import App from './10-react-redux2-手写content/index'
+import App from './11-react-persist持久化存储/index'
+import {Provider} from 'react-redux'
+import {store,persistor} from './11-react-persist持久化存储/redux/store'
+import { PersistGate } from 'redux-persist/integration/react'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   // <React.StrictMode>
-    <App></App>
+  <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <App />
+      </PersistGate>
+    </Provider>
+    
   // </React.StrictMode>
 
   // React.createElement(
