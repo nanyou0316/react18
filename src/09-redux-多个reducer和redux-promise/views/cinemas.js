@@ -19,7 +19,7 @@ import store from '../redux/store'
 //       })
 // }
 async function myAsnyc(){
-      let list= await axios({
+      let obj= await axios({
         url: 'https://m.maizuo.com/gateway?cityId=440300&ticketFlag=1&k=6513565',
         method: 'get',
         headers: {
@@ -34,7 +34,7 @@ async function myAsnyc(){
           payload:res.data.data.cinemas
         }
       })
-      return list
+      return obj
 }
 export default function Cinemas() {
   const [arr,setArr] =useState(store.getState().cinemasReducer.list)

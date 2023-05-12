@@ -2,6 +2,7 @@ const initState = {
   show:true
 }
 export  const reducer= (prevState=initState,action={})=>{
+  console.log("我被触发了。。。。。。。。。。。。。。。。。。。。");
   let newValue={...prevState}
   const {type} =action
   switch (type) {

@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import store from '../redux/store'
-export default class Detail extends Component {
+// import store from '../redux/store'
+import { connect } from 'react-redux'
+ class Detail extends Component {
   state={
     info:{}
   }
   componentDidMount() {
-    store.dispatch({
-      type:'hide-tabbar'
-     })
+    this.props.hide()
     
     // console.log(this.props.match.params.id);
     const id=this.props.match.params.id
@@ -27,9 +26,10 @@ export default class Detail extends Component {
     
   }
   componentWillUnmount(){
-     store.dispatch({
-      type:'show-tabbar'
-     })
+    //  store.dispatch({
+    //   type:'show-tabbar'
+    //  })
+    this.props.show()
   }
   render() {
     const {info} =this.state
@@ -39,3 +39,7 @@ export default class Detail extends Component {
     </div>
   }
 }
+export default connect(null,{
+  hide:() => ({ type: 'hide-tabbar' }),
+  show:() => ({ type: 'show-tabbar' })
+})(Detail)
