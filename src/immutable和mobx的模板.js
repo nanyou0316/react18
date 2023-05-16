@@ -2,13 +2,18 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
-import App from './temp/index'
+import {Provider} from 'react-redux'
+// import { store } from './12-immutable使用/redux/store'
+import { store } from './13-mobx使用/redux/store'
+// import App from './12-immutable使用/index'
+// import App from './13-mobx使用/index'
+import App from './14-styled-components/index'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   // <React.StrictMode>
- 
+  <Provider store={store}>
     <App />
-
+  </Provider>
 
   // </React.StrictMode>
 
