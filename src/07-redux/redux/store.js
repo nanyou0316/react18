@@ -37,5 +37,5 @@ const store = createStore(reducer)
 //     subscribe,dispatch,getState
 //   }
 // }
-// const store = createMyStore(reducer)
+const store = createMyStore(reducer)
 export default store
