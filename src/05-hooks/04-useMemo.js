@@ -5,7 +5,7 @@ import React, {  useMemo, useState } from 'react'
   const getLi = useMemo(() => {
     console.log('arr加载了')
     return arr.map((item) => <li key={item}>{item}</li>)
-  }, [])
+  }, [arr])
   return (
     <div>
       <h1>{name}</h1>

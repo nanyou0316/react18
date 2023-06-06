@@ -27,6 +27,7 @@ function Sister() {
   )
 }
 const GlobalContext = React.createContext()
+// GlobalContext这个名字可以随便取
 export default function Father() {
   const [msg, setmsg] = useState('来打我呀')
   return (

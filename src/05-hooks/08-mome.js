@@ -1,4 +1,5 @@
 import React, { Fragment, useState, memo } from 'react'
+
 function Children() {
   return (
     <Fragment>
@@ -11,8 +12,12 @@ function Children() {
 }
 const HighChildren = memo(Children, (ov, nv) => {
   console.log(ov, nv)
+  if(nv.num<5){
+    return true
+  }
   return false
 })
+
 export default function Memo() {
   const [num, setNum] = useState(0)
   return (

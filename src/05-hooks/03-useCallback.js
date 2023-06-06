@@ -19,8 +19,8 @@ import UseMemo from './03-memo'
       </button>
       <div>
         <ul>
-          {/* <UseMemo getLi={getLi}></UseMemo> */}
-          {getLi()}
+          <UseMemo getLi={getLi}></UseMemo>
+          {/* {getLi()} */}
         </ul>
       </div>
     </div>
